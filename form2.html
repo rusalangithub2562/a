@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ใบสมัครชมรมเด็กแว๊น!!</title>
+</head>
+<body>
+    <div align="center">
+
+        <img src="images/images.jpg" width="200"> <br> <br>
+        <form action="http://192.168.1.160/api/get_data.php" method="POST">
+                <input type="text" placeholder="ชื่อ-สกุล" name="fullname"> 
+                <br> <br>
+                <input type="text" placeholder="ชื่อบัชีผู้ใช้" name="username">
+                <br> <br>
+                <input type="password" placeholder="รหัสผ่าน" name="password">
+                <br> <br>
+                <select name="dep" id="">
+                    <option value="Information Technology">เทคโนโลยีสารสนเทศ</option>
+                    <option value="Business Computer">คอมธุระกิจ</option>
+                    <option value="Accounting">การบัญชี</option>
+                    <option value="Nutrition Food">อาหารและโภชนาการ</option>
+                </select>
+                <br> <br>
+                <input type="text" placeholder="เกรดเฉลี่ยสะสม" pattern="[0-4]{1}.[0-9]{2}" name="grade">
+                <br> <br>
+                <input type="email" placeholder="อีเมลล์" name="email">
+                <br> <br>
+                <input type="tel" placeholder="เบอร์โทร 081-2345678" pattern="[0-9]{3}-[0-9]{7}" name="mobile">
+                <br> <br>
+                <input type="file" placeholder="เลื่อกรูปพื้นหลัง" name="photo">
+                <br> <br>
+                <input type="color" placeholder="เลือกสีพื้น" name="color">
+                <br><br>
+                Your Post
+                <textarea name="comment" id="" cols="30" rows="5"></textarea>
+                <br><br>
+                Fruit's Farvorite:
+                <input type="checkbox" name="check[]"> แตงโม
+                <input type="checkbox" name="check[]"> มังคุด
+                <input type="checkbox" name="check[]"> ทุเรียน
+                <input type="checkbox" name="check[]"> ฝรั่ง
+                <input type="checkbox" name="check[]"> มะม่วง
+                <br><br>
+                <input type="date" name="day">
+                <br><br>
+                <input type="time" name="tm" placeholder="วันที่ออกจากในรังไข่">
+                <br><br>
+                <input type="submit" value="ส่งข้อมูล">
+        </form>
+
+    </div>
+    
+</body>
+</html>

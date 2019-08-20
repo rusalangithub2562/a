@@ -1,0 +1,11 @@
+p{
+    color: burlywood;
+}
+.p1{
+    color: turquoise;
+    text-align: center;
+}
+p.p2{
+    color: cornflowerblue;
+    text-align: right;
+}
